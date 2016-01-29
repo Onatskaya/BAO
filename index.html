@@ -9,7 +9,7 @@
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Brushed | Responsive One Page Template</title>   
+<title>BAO - Chinese cuisine</title>   
 
 <meta name="description" content="Insert Your Site Description" /> 
 
@@ -35,7 +35,8 @@
 <link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 
 <!-- Font Icons -->
-<link href="_include/css/fonts.css" rel="stylesheet">
+<!-- <link href="_include/css/fonts.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <!-- Shortcodes -->
 <link href="_include/css/shortcodes.css" rel="stylesheet">
@@ -49,7 +50,7 @@
 <link href="_include/css/supersized.shutter.css" rel="stylesheet">
 
 <!-- Google Font -->
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+<!-- <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'> -->
 
 <!-- Fav Icon -->
 <link rel="shortcut icon" href="#">
@@ -100,11 +101,11 @@
     </div>   
 	
 	<div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <a id="prevslide" class="load-item"><i class="fa fa-angle-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="fa fa-angle-right"></i></a>
         <ul id="slide-list"></ul>
         
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+        <a id="nextsection" href="#restaurant"><i class="fa fa-angle-down"></i></a>
     </div>
 </div>
 <!-- End Homepage Slider -->
@@ -115,12 +116,13 @@
     	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
         
         <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Brushed Template</a>
+        	<a id="goUp" href="#home-slider" title="BAO - Chinese cuisine">BAO - Chinese cuisine</a>
         </div>
         
         <nav id="menu">
         	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Home</a></li>
+            	<li class="current"><a href="#home-slider">Главная</a></li>
+                <li><a href="#restaurant">Ресторан</a></li>
                 <li><a href="#work">Our Work</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -131,6 +133,63 @@
     </div>
 </header>
 <!-- End Header -->
+
+<!-- About restaurant section -->
+<div id="restaurant" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">MODERN CHINESE RESTARANT</h2>
+            </div>
+        </div>
+        <div class="span8 offset2 rest_story">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolorum magnam, ut quis veritatis voluptas numquam, voluptatibus ipsam consequatur nostrum praesentium dolorem tempore corporis dignissimos laborum! Mollitia vitae, error recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea odit earum ducimus, quo aut doloremque et id ipsum facilis enim aliquid voluptatem iste repudiandae, pariatur optio corporis blanditiis perferendis voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repellendus nesciunt facere, soluta necessitatibus similique, non incidunt molestias voluptate tempore provident sequi ad dolorum sunt asperiores ipsum. Obcaecati, harum, adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sed consequuntur similique neque eveniet suscipit magnam nam minima dignissimos expedita natus illum totam ipsa, velit nobis eaque doloremque, quibusdam voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus error voluptates aut animi maiores quidem non nam ea accusantium, quo modi sapiente illum itaque culpa laborum. Dolores officia fuga nesciunt.</p>
+            
+        </div>
+    </div>
+    <!-- End Title Page -->
+</div>
+</div>
+<!-- End About restaurant section-->
+
+<!-- Table reservation -->
+<div id="reservation" class="page">
+    <!-- Contact Form -->
+    <div class="row">
+        <div class="container">
+            <div class="span8 offset2">
+            
+                <form id="contact-form" class="contact-form" action="#">
+                    <p class="contact-name">
+                        <input id="contact_name" type="text" placeholder="ФИО" value="" name="name" />
+                    </p>
+                    <p class="contact-tel">
+                        <input id="contact_tel" type="text" placeholder="Телефон" value="" name="tel" />
+                    </p>
+                    <p class="contact-date">
+                        <input id="contact_date" type="date" placeholder="Дата" value="Дата" name="date" />
+                    </p>
+                    <p class="contact-message">
+                        <textarea id="contact_message" placeholder="Дополнительная информация" name="message" rows="15" cols="40"></textarea>
+                    </p>
+                    <p class="contact-submit">
+                        <a id="contact-submit" class="submit" href="#">Send Your Email</a>
+                    </p>
+                    
+                    <div id="response">
+                    
+                    </div>
+                </form>
+             
+            </div>
+        </div>
+        
+    </div>
+    <!-- End Contact Form -->
+</div>
+<!-- End Table reservation -->
 
 <!-- Our Work Section -->
 <div id="work" class="page">
@@ -172,7 +231,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="_include/img/work/full/image-01-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
@@ -184,7 +243,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="_include/img/work/full/image-02-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
@@ -196,7 +255,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="_include/img/work/full/image-03-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
@@ -208,7 +267,7 @@
                             	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
                             	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/51460511">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-08.jpg" alt="Video">
@@ -220,7 +279,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="_include/img/work/full/image-04-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
@@ -232,7 +291,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="_include/img/work/full/image-05-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-05.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
@@ -244,7 +303,7 @@
                             	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
                             	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/50834315">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-09.jpg" alt="Video">
@@ -256,7 +315,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="_include/img/work/full/image-06-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
@@ -268,7 +327,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-07-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
@@ -393,47 +452,47 @@
     <!-- End Title Page -->
     
     <!-- Contact Form -->
-    <div class="row">
-    	<div class="span9">
+   <!--  <div class="row">
+       <div class="span9">
+       
+           <form id="contact-form" class="contact-form" action="#">
+               <p class="contact-name">
+                   <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+               </p>
+               <p class="contact-email">
+                   <input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+               </p>
+               <p class="contact-message">
+                   <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+               </p>
+               <p class="contact-submit">
+                   <a id="contact-submit" class="submit" href="#">Send Your Email</a>
+               </p>
+               
+               <div id="response">
+               
+               </div>
+           </form>
         
-        	<form id="contact-form" class="contact-form" action="#">
-            	<p class="contact-name">
-            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
-                </p>
-                <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
-                </p>
-                <p class="contact-message">
-                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
-                </p>
-                <p class="contact-submit">
-                	<a id="contact-submit" class="submit" href="#">Send Your Email</a>
-                </p>
-                
-                <div id="response">
-                
-                </div>
-            </form>
-         
-        </div>
-        
-        <div class="span3">
-        	<div class="contact-details">
-        		<h3>Contact Details</h3>
-                <ul>
-                    <li><a href="#">hello@brushed.com</a></li>
-                    <li>(916) 375-2525</li>
-                    <li>
-                        Brushed Studio
-                        <br>
-                        5240 Vanish Island. 105
-                        <br>
-                        Unknow
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+       </div>
+       
+       <div class="span3">
+           <div class="contact-details">
+               <h3>Contact Details</h3>
+               <ul>
+                   <li><a href="#">hello@brushed.com</a></li>
+                   <li>(916) 375-2525</li>
+                   <li>
+                       Brushed Studio
+                       <br>
+                       5240 Vanish Island. 105
+                       <br>
+                       Unknow
+                   </li>
+               </ul>
+           </div>
+       </div>
+   </div> -->
     <!-- End Contact Form -->
 </div>
 </div>
@@ -445,7 +504,7 @@
     	<div class="row">
             <div class="span12">
                 <div class="follow">
-                    <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="font-icon-social-twitter"></i></a>
+                    <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
                 </div>
                     
                 <div id="ticker" class="query"> 
@@ -463,15 +522,11 @@
             <div class="span12">
                 <nav id="social">
                     <ul>
-                        <li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                        <li><a href="http://dribbble.com/Bluxart" title="Follow Me on Dribbble" target="_blank"><span class="font-icon-social-dribbble"></span></a></li>
-                        <li><a href="http://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
-                        <li><a href="http://www.behance.net/alessioatzeni" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
-                        <li><a href="https://www.facebook.com/Bluxart" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                        <li><a href="https://plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
-                        <li><a href="http://www.linkedin.com/in/alessioatzeni" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
-                        <li><a href="http://themeforest.net/user/Bluxart" title="Follow Me on ThemeForest" target="_blank"><span class="font-icon-social-envato"></span></a></li>
-                        <li><a href="http://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li>
+                        <li><a href="#" title="Follow Me on Facebookr" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="#" title="Follow Me on Instagram" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                        <li><a href="#" title="Follow Me on Apple" target="_blank"><span class="fa fa-apple"></span></a></li>
+                        <li><a href="#" title="Follow Me on Android" target="_blank"><span class="fa fa-android"></span></a></li>
+                        <li><a href="#" title="Follow Me on Windows" target="_blank"><span class="fa fa-windows"></span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -488,7 +543,7 @@
 
 <!-- Back To Top -->
 <a id="back-to-top" href="#">
-	<i class="font-icon-arrow-simple-up"></i>
+	<i class="fa fa-angle-up"></i>
 </a>
 <!-- End Back to Top -->
 
