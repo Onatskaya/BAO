@@ -648,7 +648,7 @@ nav#menu #menu-nav li a:hover {
 ================================================== */
 
 #restaurant{
-	background: url(../img/rest4_bg.jpg) no-repeat top center;
+	background: url(../img/1.jpg) no-repeat center center;
 	background-size: cover;
 	background-attachment: scroll;
 }
@@ -954,6 +954,15 @@ nav#menu #menu-nav li a:hover {
 
 #contact-form p {
 	margin-bottom: 1px;	
+	display: block;
+	box-sizing: border-box;
+	border-right: 3px solid #2F3238;
+}
+
+.contact-submit{
+	display: block!important;
+	margin: 5px auto!important;
+	width: 37%;
 }
 
 #contact-form input,
@@ -973,23 +982,53 @@ nav#menu #menu-nav li a:hover {
     height: auto;
     padding: 15px;
 	margin: 0;
+	margin-bottom: 3px;
 	
     resize: none;
 }
 
 #contact-form input {
-    width: 100%;
+    //width: 100%;
+    //width: 33%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
+.input-group-addon{
+	padding-bottom: 0!important;
+	padding-top: 0!important;
+	position: relative;
+	left: 15px;
+}
+
+#contact_date{
+	padding: 2px 15px!important;
+}
+#contact_date .input-group-addon{
+	border-radius: 0;
+}
+#contact_date input{
+	background: #26292E;
+	margin-bottom: 0;
+	border-bottom: 4px solid #26292E;
+}
+#contact-form .contact-message{
+	border-right: none;
+	background: #26292E;
+	margin-top: 5px;
+}
 #contact-form textarea {
-    width: 100%;
+    width: 99.8%;
 	resize: vertical;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+.contact-name,
+.contact-tel,
+#contact_date{
+	background: #26292E;
 }
 
 #contact-form .submit {
@@ -1003,7 +1042,7 @@ nav#menu #menu-nav li a:hover {
     text-align: center;
     vertical-align: middle;
     width: auto;
-	margin-top: 30px;
+	//margin-top: 30px;
 	
 	-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;	
 	   -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
