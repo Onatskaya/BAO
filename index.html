@@ -24,6 +24,12 @@
 <!-- Bootstrap -->
 <link href="_include/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- JQuery UI -->
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css" rel="stylesheet"> -->
+<link href="_include/css/jquery-ui.min.css" rel="stylesheet">
+<link href="_include/css/jquery-ui.theme.min.css" rel="stylesheet">
+
+
 <!-- Main Style -->
 <link href="_include/css/main.css" rel="stylesheet">
 
@@ -49,7 +55,7 @@
 <link href="_include/css/supersized.css" rel="stylesheet">
 <link href="_include/css/supersized.shutter.css" rel="stylesheet">
 <!-- DtePicker-->
-<link rel="stylesheet" href="_include/css/bootstrap-datetimepicker.min.css" />
+<!-- <link rel="stylesheet" href="_include/css/bootstrap-datetimepicker.min.css" /> -->
 
 <!-- Google Font -->
 <!-- <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'> -->
@@ -115,25 +121,29 @@
 <!-- Header -->
 <header>
     <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
         
         <div id="logo">
-        	<a id="goUp" href="#home-slider" title="BAO - Chinese cuisine">BAO - Chinese cuisine</a>
+            <a id="goUp" href="#home-slider" title="BAO - Chinese cuisine">BAO - Chinese cuisine</a>
         </div>
         
         <nav id="menu">
-        	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Главная</a></li>
-                <li><a href="#restaurant">Ресторан</a></li>
-                <li><a href="#work">Our Work</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-				<li><a href="shortcodes.html" class="external">Shortcodes</a></li>
+            <ul id="menu-nav">
+                <li class="current"><a href="#home-slider">Главная</a></li>
+                <li><a href="#restaurant">О ресторане</a></li>
+                <li><a href="#rest_menu">Меню</a></li>
+                <li><a href="#work">Галерея</a></li>
+                <li><a href="#philosophy">Философия</a></li>
+                <li><a href="#ektor">Эктор и команда</a></li>
+                <!-- <li><a href="#about">About Us</a></li> -->
+                <li><a href="#contact">Контакты</a></li>
+               <!--  <li><a href="shortcodes.html" class="external">Shortcodes</a></li> -->
             </ul>
         </nav>
         
     </div>
 </header>
+<!-- End Header -->
 <!-- End Header -->
 
 <!-- About restaurant section -->
@@ -158,30 +168,33 @@
 
 <!-- Table reservation -->
 <div id="reservation" class="page">
-    <!-- Contact Form -->
+    <!--Contact Form-->
     <div class="container">
         <div class="row">
-            <div class="span8 offset2">
+            <div class="span9 reserv-form">
                 <form id="contact-form" class="contact-form form-inline" action="#">
-                    <p class="contact-name col-xs-12 col-sm-4">
+                    <p class="contact-name span3">
                         <input id="contact_name" type="text" placeholder="ФИО" value="" name="name" />
                     </p>
-                    <p class="contact-tel col-xs-12 col-sm-4">
+                    <p class="contact-tel span3">
                         <input id="contact_tel" type="text" placeholder="Телефон" value="" name="tel" />
                     </p>
-                    <div class="input-group date col-xs-12 col-sm-4" id="contact_date">
+                    <!-- <div class="input-group date col-xs-12 col-sm-4" id="contact_date">
                       <input type="text" class="form-control" placeholder="Дата" />
                       <span class="input-group-addon">
                         <span class="glyphicon-calendar glyphicon"></span>
                       </span>
-                    </div>
+                    </div> -->
+                    <p class="contact-date span3">
+                        <input type="text" id="datepicker" placeholder="Дата">
+                    </p>
                     <!-- <p class="contact-date">
                         <input  id="contact_date" type="text" class="form-control" placeholder="Дата" name="date">
                     </p> -->
                     <p class="contact-message">
                         <textarea id="contact_message" placeholder="Дополнительная информация" name="message" rows="5" cols="40"></textarea>
                     </p>
-                    <p class="contact-submit">
+                    <p class="contact-submit span4">
                         <a id="contact-submit" class="submit" href="#">Забронировать столик</a>
                     </p>
                     
@@ -193,19 +206,44 @@
         </div>
         
     </div>
-    <!-- End Contact Form -->
+    <!--End Contact Form-->
 </div>
 <!-- End Table reservation -->
 
-<!-- Our Work Section -->
+<!-- Rest Menu Section -->
+<div id="rest_menu" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Меню</h2>
+                <h3 class="title-description">Здесь будет галерея с меню ресторана</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- People -->
+    <div class="row">
+        
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis libero veniam eveniet recusandae officiis! Eaque, velit a repellat iure consectetur tempore eum beatae in, aliquam iste mollitia, dolores aliquid optio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nisi asperiores eum dolorum eveniet beatae dolorem quo repudiandae commodi. Illum, enim molestiae, animi quae necessitatibus culpa consectetur aspernatur tenetur exercitationem?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veritatis natus, cumque mollitia aliquam harum cupiditate cum, magnam eveniet asperiores sequi laudantium, quasi dolores ducimus! Corporis nobis, molestias dicta repellendus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iure odit deleniti voluptate incidunt sint similique repellat perferendis quos, praesentium, adipisci, et obcaecati neque dolor deserunt veniam excepturi, sapiente doloribus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ducimus unde, tenetur maxime blanditiis, accusamus magnam mollitia et veniam consectetur consequatur id ad amet, facilis soluta beatae quia! Debitis, architecto?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptatibus nihil, architecto accusamus itaque impedit repellendus veniam reprehenderit modi vitae odit ut mollitia illo at repudiandae id! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis libero veniam eveniet recusandae officiis! Eaque, velit a repellat iure consectetur tempore eum beatae in, aliquam iste mollitia, dolores aliquid optio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nisi asperiores eum dolorum eveniet beatae dolorem quo repudiandae commodi. Illum, enim molestiae, animi quae necessitatibus culpa consectetur aspernatur tenetur exercitationem?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veritatis natus, cumque mollitia aliquam harum cupiditate cum, magnam eveniet asperiores sequi laudantium, quasi dolores ducimus! Corporis nobis, molestias dicta repellendus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iure odit deleniti voluptate incidunt sint similique repellat perferendis quos, praesentium, adipisci, et obcaecati neque dolor deserunt veniam excepturi, sapiente doloribus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ducimus unde, tenetur maxime blanditiis, accusamus magnam mollitia et veniam consectetur consequatur id ad amet, facilis soluta beatae quia! Debitis, architecto?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptatibus nihil, architecto accusamus itaque impedit repellendus veniam reprehenderit modi vitae odit ut mollitia illo at repudiandae id! Veritatis, veniam, ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti totam dolor minus. Voluptatum labore debitis optio dolor commodi molestiae distinctio nam, magni earum nihil vero esse deleniti fugit doloremque sed.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas voluptatem minima quidem accusantium fugiat reiciendis quas sint, incidunt, perferendis animi sunt! Sapiente eum, suscipit rem, enim modi impedit laborum exercitationem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti enim necessitatibus dolorem debitis, libero vero ullam iusto repudiandae quae eligendi possimus, aut, numquam officia explicabo! Eos a illum commodi ipsam.</p>
+        
+    </div>
+    <!-- End People -->
+</div>
+</div>
+<!-- End Rest Menu Section -->
+
+<!-- Gallery Section -->
 <div id="work" class="page">
 	<div class="container">
     	<!-- Title Page -->
         <div class="row">
             <div class="span12">
                 <div class="title-page">
-                    <h2 class="title">Our Work</h2>
-                    <h3 class="title-description">Check Out Our Projects on <a href="#">Dribbble</a>.</h3>
+                    <h2 class="title">Галерея</h2>
+                    <h3 class="title-description">Фотогалерея ресторана.</h3>
                 </div>
             </div>
         </div>
@@ -217,11 +255,11 @@
             	<!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Type of Work</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Photography</a></li>
-                        <li><a href="#filter" data-option-value=".video">Video</a></li>
+                    	<li class="type-work">Категории</li>
+                        <li><a href="#filter" data-option-value="*" class="selected">Все категории</a></li>
+                        <li><a href="#filter" data-option-value=".design">Категория 1</a></li>
+                        <li><a href="#filter" data-option-value=".photography">Категория 2</a></li>
+                        <li><a href="#filter" data-option-value=".video">Категория 3</a></li>
                     </ul>
                 </nav>
                 <!-- End Filter -->
@@ -235,108 +273,74 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 design">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="_include/img/work/full/image-01-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Bao" href="_include/img/work/full/mechnikova.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="_include/img/work/thumbs/mechnikova_thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 design">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="_include/img/work/full/image-02-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Ресторан" href="_include/img/work/full/mechnikova.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="_include/img/work/thumbs/mechnikova_thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 photography">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="_include/img/work/full/image-03-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Интерьер" href="_include/img/work/full/mechnikova.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="_include/img/work/thumbs/mechnikova_thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 video">
                             	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/51460511">
+                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Restaurant" href="_include/img/work/full/mechnikova.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-08.jpg" alt="Video">
+                                <img src="_include/img/work/thumbs/mechnikova_thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.">
                             </li>
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 photography">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="_include/img/work/full/image-04-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Bao" href="_include/img/work/full/mechnikova.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="_include/img/work/thumbs/mechnikova_thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 photography">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="_include/img/work/full/image-05-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Bao" href="_include/img/work/full/mechnikova.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-05.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 video">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/50834315">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-09.jpg" alt="Video">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="_include/img/work/full/image-06-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-07-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"><i class="fa fa-plus"></i></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="_include/img/work/thumbs/mechnikova_thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
                         </ul>
@@ -348,12 +352,56 @@
         <!-- End Portfolio Projects -->
     </div>
 </div>
-<!-- End Our Work Section -->
+<!-- End Gallery Section -->
 
-<!-- About Section -->
-<div id="about" class="page-alternate">
+<!-- Philosophy section -->
+<div id="philosophy" class="page-alternate">
 <div class="container">
     <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Философия</h2>
+            </div>
+        </div>
+        <div class="span8 offset2 rest_story">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolorum magnam, ut quis veritatis voluptas numquam, voluptatibus ipsam consequatur nostrum praesentium dolorem tempore corporis dignissimos laborum! Mollitia vitae, error recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea odit earum ducimus, quo aut doloremque et id ipsum facilis enim aliquid voluptatem iste repudiandae, pariatur optio corporis blanditiis perferendis voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repellendus nesciunt facere, soluta necessitatibus similique, non incidunt molestias voluptate tempore provident sequi ad dolorum sunt asperiores ipsum. Obcaecati, harum, adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolorum magnam, ut quis veritatis voluptas numquam, voluptatibus ipsam consequatur nostrum praesentium dolorem tempore corporis dignissimos laborum! Mollitia vitae, error recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea odit earum ducimus, quo aut doloremque et id ipsum facilis enim aliquid voluptatem iste repudiandae, pariatur optio corporis blanditiis perferendis voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repellendus nesciunt facere, soluta necessitatibus similique, non incidunt molestias voluptate tempore provident sequi ad dolorum sunt asperiores ipsum. Obcaecati, harum, adipisci!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repellendus nesciunt facere, soluta necessitatibus similique, non incidunt molestias voluptate tempore provident sequi ad dolorum sunt asperiores ipsum. Obcaecati, harum, adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolorum magnam, ut quis veritatis voluptas numquam, voluptatibus ipsam consequatur nostrum praesentium dolorem tempore corporis dignissimos laborum! Mollitia vitae, error recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea odit earum ducimus, quo aut doloremque et id ipsum facilis enim aliquid voluptatem iste repudiandae, pariatur optio corporis blanditiis perferendis voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repellendus nesciunt.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sed consequuntur similique neque eveniet suscipit magnam nam minima dignissimos expedita natus illum totam ipsa, velit nobis eaque doloremque, quibusdam voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus error voluptates aut animi maiores quidem non nam ea accusantium, quo modi sapiente illum itaque culpa laborum. Dolores officia fuga nesciunt.</p>
+            
+        </div>
+    </div>
+    <!-- End Title Page -->
+</div>
+</div>
+<!-- End Philosophy section-->
+
+<!-- Ektor section -->
+<div id="ektor" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Эктор и команда</h2>
+            </div>
+        </div>
+        <div class="span6">
+            
+            
+        </div>
+        <div class="span6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolorum magnam, ut quis veritatis voluptas numquam, voluptatibus ipsam consequatur nostrum praesentium dolorem tempore corporis dignissimos laborum! Mollitia vitae, error recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea odit earum ducimus, quo aut doloremque et id ipsum facilis enim aliquid voluptatem iste repudiandae, pariatur optio corporis blanditiis perferendis voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repellendus nesciunt facere, soluta necessitatibus similique, non incidunt molestias voluptate tempore provident sequi ad dolorum sunt asperiores ipsum. Obcaecati, harum, adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sed consequuntur similique neque eveniet suscipit magnam nam minima dignissimos expedita natus illum totam ipsa, velit nobis eaque doloremque, quibusdam voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus error voluptates aut animi maiores quidem non nam ea accusantium, quo modi sapiente illum itaque culpa laborum. Dolores officia fuga nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolorum magnam, ut quis veritatis voluptas numquam, voluptatibus ipsam consequatur nostrum praesentium dolorem tempore corporis dignissimos laborum! Mollitia vitae, error recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea odit earum ducimus, quo aut doloremque et id ipsum facilis enim aliquid voluptatem iste repudiandae, pariatur optio corporis blanditiis perferendis voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repellendus nesciunt facere, soluta necessitatibus similique, non incidunt molestias voluptate tempore provident sequi ad dolorum sunt asperiores ipsum. Obcaecati, harum, adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sed consequuntur similique neque eveniet suscipit magnam nam minima dignissimos expedita natus illum totam ipsa, velit nobis eaque doloremque, quibusdam voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus error voluptates aut animi maiores quidem non nam ea accusantium, quo modi sapiente illum itaque culpa laborum. Dolores officia fuga nesciunt.</p>
+            
+        </div>
+    </div>
+    <!-- End Title Page -->
+</div>
+</div>
+<!-- End Ektor section-->
+
+<!-- About Section -->
+<!-- <div id="about" class="page-alternate">
+<div class="container">
+    Title Page
     <div class="row">
         <div class="span12">
             <div class="title-page">
@@ -362,14 +410,14 @@
             </div>
         </div>
     </div>
-    <!-- End Title Page -->
+    End Title Page
     
-    <!-- People -->
+    People
     <div class="row">
-    	
-        <!-- Start Profile -->
-    	<div class="span4 profile">
-        	<div class="image-wrap">
+        
+        Start Profile
+        <div class="span4 profile">
+            <div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">CTO/Founder</span>
@@ -379,20 +427,20 @@
             <h3 class="profile-name">John Doe</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
+                
             <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
                 </ul>
             </div>
         </div>
-        <!-- End Profile -->
+        End Profile
         
-        <!-- Start Profile -->
-    	<div class="span4 profile">
-        	<div class="image-wrap">
+        Start Profile
+        <div class="span4 profile">
+            <div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Creative Director</span>
@@ -402,19 +450,19 @@
             <h3 class="profile-name">Jane Helf</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
+                
             <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-email"></i></a></li>
                 </ul>
             </div>
         </div>
-        <!-- End Profile -->
+        End Profile
         
-        <!-- Start Profile -->
-    	<div class="span4 profile">
-        	<div class="image-wrap">
+        Start Profile
+        <div class="span4 profile">
+            <div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Lead Designer</span>
@@ -424,22 +472,22 @@
             <h3 class="profile-name">Joshua Insanus</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
+                
             <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
                 </ul>
             </div>
         </div>
-        <!-- End Profile -->
+        End Profile
         
     </div>
-    <!-- End People -->
+    End People
 </div>
-</div>
+</div> -->
 <!-- End About Section -->
 
 
@@ -450,13 +498,20 @@
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">Get in Touch</h2>
-                <h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3>
+                <h2 class="title">Контакты</h2>
+                <h3 class="title-description">Мы на карте.</h3>
             </div>
         </div>
     </div>
     <!-- End Title Page -->
-    
+</div>
+<div class="row">
+    <div id="map"></div>
+</div>
+</div>
+<!-- End Contact Section -->
+
+
     <!-- Contact Form -->
    <!--  <div class="row">
        <div class="span9">
@@ -500,14 +555,12 @@
        </div>
    </div> -->
     <!-- End Contact Form -->
-</div>
-</div>
-<!-- End Contact Section -->
+
 
 <!-- Twitter Feed -->
-<div id="twitter-feed" class="page-alternate">
-	<div class="container">
-    	<div class="row">
+<!-- <div id="twitter-feed" class="page-alternate">
+    <div class="container">
+        <div class="row">
             <div class="span12">
                 <div class="follow">
                     <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -518,7 +571,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- End Twitter Feed -->
 
 <!-- Socialize -->
@@ -566,15 +619,79 @@
 <script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
 <script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="_include/js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
 <!-- DatePicker-->
-<script type="text/javascript" src="_include/js/moment-with-locales.min.js"></script>
-<script type="text/javascript" src="_include/js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-      $('#contact_date').datetimepicker({language: 'ru'});
-    });
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="datepicker-ru.js"></script>
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker( {
+        autoSize: true
+    }, $.datepicker.regional[ "ru" ] );
+  });
   </script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false">
+        </script>
+  <script>
+    google_maps(); // Load google maps onload page
 
+          function google_maps() {
+            var latlng = new google.maps.LatLng(50.437052, 30.532955);
+            var settings = {
+                zoom: 16,
+                center: latlng,
+                mapTypeControl: false,
+                mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                scrollwheel: false,
+                disableDoubleClickZoom: true,
+                navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map"), settings);
+            var myLatlng = new google.maps.LatLng(50.437052, 30.532955);
+            
+            var myOptions = {
+                zoom: 16,
+                center: myLatlng,
+                scrollwheel: false,
+                disableDoubleClickZoom: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            // Создаем и размещаем маркер на карте
+
+            var marker = new google.maps.Marker({  
+              position: new google.maps.LatLng(50.437052, 30.532955),  
+              map: map,  
+              title: 'BAO',  
+              clickable: false,  
+              scrollwheel: false,
+              icon: '_include/img/marker_icon.png' 
+            }); 
+        };
+
+  </script>
+       <!-- <script>
+
+        //google.maps.event.addDomListener(window, 'load', init);
+            var map = new google.maps.Map(document.getElementById('map'), {  
+              zoom: 15,  
+              center: new google.maps.LatLng(50.437052, 30.532955),  
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              scrollwheel: false,  
+            });  
+               
+            // Создаем и размещаем маркер на карте
+
+            var marker = new google.maps.Marker({  
+              position: new google.maps.LatLng(50.437052, 36.223136),  
+              map: map,  
+              title: 'Ф1-Реклама',  
+              clickable: false,  
+              scrollwheel: false,
+              icon: '_include/img/marker_icon.png' 
+            }); 
+
+        </script>-->
+<!-- End Js -->
 </body>
 </html>
