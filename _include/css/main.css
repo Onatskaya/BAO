@@ -825,6 +825,15 @@ nav#menu #menu-nav li a:hover {
 	background-attachment: scroll;
 }
 
+/* ==================================================
+   Rest_menu Section
+================================================== */
+
+.rest_menu .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 /* ==================================================
    About Section
