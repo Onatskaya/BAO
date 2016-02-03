@@ -26,7 +26,16 @@ Version: 1.0
 	url('fonts/pfdintextcomppro1-medium_1.ttf') format('truetype'),         
 	url('fonts/pfdintextcomppro1-medium_1.svg#Sri-TSCRegular') format('svg')
 }
-
+@font-face {
+    font-family: 'AnimalsNormal';
+    src: url('fonts/animals-webfont.eot');
+    src: url('fonts/animals-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/animals-webfont.woff') format('woff'),
+         url('fonts/animals-webfont.ttf') format('truetype'),
+         url('fonts/animals-webfont.svg#AnimalsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /* ==================================================
    Basic Styles
 ================================================== */
@@ -828,11 +837,8 @@ nav#menu #menu-nav li a:hover {
 /* ==================================================
    Rest_menu Section
 ================================================== */
-
-.rest_menu .item img{
-    display: block;
-    width: 100%;
-    height: auto;
+/* #rest_menu{
+	height: 1000px;
 }
 
 /* ==================================================
